@@ -92,7 +92,7 @@ class WPUF_Add_Post {
 
                         <li>
                             <label for="new-post-title">
-                                <?php echo wpuf_get_option( 'title_label', 'wpuf_labels' ); ?> <span class="required">*</span>
+                                <?php echo wpuf_get_option( 'title_label', 'wpuf_labels', 'Product Name'  ); ?> <span class="required">*</span>
                             </label>
                             <input class="requiredField" type="text" value="<?php echo $title; ?>" name="wpuf_post_title" id="new-post-title" minlength="2">
                             <div class="clear"></div>
