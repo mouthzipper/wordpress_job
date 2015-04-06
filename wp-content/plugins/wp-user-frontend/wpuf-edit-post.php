@@ -45,6 +45,8 @@ class WPUF_Edit_Post {
 
         $curpost = get_post( $post_id );
 
+          //var_dump( $cats );
+
         if ( !$curpost ) {
             return __( 'Invalid post', 'wpuf' );
         }
@@ -123,7 +125,7 @@ class WPUF_Edit_Post {
 
                     <li>
                         <label for="new-post-title">
-                            <?php echo wpuf_get_option( 'title_label', 'wpuf_labels', 'Post Title' ); ?> <span class="required">*</span>
+                            <?php echo wpuf_get_option( 'title_label', 'wpuf_labels', 'Product Name' ); ?>
                         </label>
                         <input type="text" name="wpuf_post_title" id="new-post-title" minlength="2" value="<?php echo esc_html( $curpost->post_title ); ?>">
                         <div class="clear"></div>
@@ -172,7 +174,7 @@ class WPUF_Edit_Post {
 
                     <li>
                         <label for="new-post-desc">
-                            <?php echo wpuf_get_option( 'desc_label', 'wpuf_labels', 'Post Content' ); ?> <span class="required">*</span>
+                            <?php echo wpuf_get_option( 'desc_label', 'wpuf_labels', 'Product Description' ); ?> <span class="required">*</span>
                         </label>
 
                         <?php
